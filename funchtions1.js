@@ -7,8 +7,14 @@ function printAge(birthYear) {
   let currentYear = new Date().getFullYear();
   age = currentYear - birthYear;
   console.log(`${age}`);
+  return age;
 }
 printAge(1522);
+
+function printAgeAndName(name,birthYear) {
+  console.log(`Hello ${name} you are ${printAge(birthYear)} years old`)
+}
+printAgeAndName("bob",1989);
 function printHello(name, language) {
   // const name = prompt("Write your name", "Jane Doe");
   //   const language =prompt("choose language, en = english, es = espaneol, fr = french, tr = arabic", "en");
